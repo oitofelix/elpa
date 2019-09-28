@@ -28,7 +28,7 @@ That means that all those systems boot directly onto full-screen Emacs
 window manager is [EXWM](https://github.com/ch11ng/exwm) (wherever
 possible), and I use Emacs for everything feasible, the only exception
 being to resort to a javascript capable web-browser for sites
-requiring it and whose job can’t be performed within Emacs.
+requiring it and whose job can’t be done within Emacs.
 
 To make all packages in this archive available for installation within
 your Emacs, just customize the variable `package-archives` to this
@@ -40,13 +40,14 @@ effect:
 ```
 
 Then `M-x list-packages` should list all newly available packages from
-the "oitofelix" archive.
+the **oitofelix** archive.
 
 The table below list all packages available from this ELPA and whether
 they are available from other sources.
 
 
 ### Packages
+
 Name | Description | MELPA | GNU ELPA | Core Emacs |
 -----|-------------|-------|----------|------------|
 [info-rename-buffer](https://github.com/oitofelix/info-rename-buffer) | Rename Info buffers to match manuals | | |
@@ -61,6 +62,7 @@ ones.  These are available from other sources, but I list them here
 for completeness.
 
 ### Contributions
+
 File | Package | Description | MELPA | GNU ELPA | Core Emacs |
 -----|---------|-------------|-------|----------|------------|
 emms-volume-mixerctl.el | [EMMS](https://www.gnu.org/software/emms/) | Support OpenBSD’s volume mixer | X | X | |
