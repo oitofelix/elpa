@@ -1,4 +1,15 @@
 (1
+ (elpa-deploy .
+              [(20190928 1939)
+               ((emacs
+                 (24))
+                (f
+                 (0 0)))
+               "ELPA deployment library" single
+               ((:authors
+                 ("Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org"))
+                (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
+                (:url . "https://github.com/oitofelix/elpa-deploy"))])
  (tramp-auto-auth .
                   [(20190928 1932)
                    ((emacs
