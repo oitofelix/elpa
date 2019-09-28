@@ -1,4 +1,15 @@
 (1
+ (tramp-auto-auth .
+                  [(20190928 1932)
+                   ((emacs
+                     (24 4))
+                    (tramp
+                     (0 0)))
+                   "TRAMP automatic authentication library" single
+                   ((:authors
+                     ("Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org"))
+                    (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
+                    (:url . "https://github.com/oitofelix/tramp-auto-auth"))])
  (info-rename-buffer .
                      [(20190928 1719)
                       ((emacs
