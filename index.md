@@ -42,7 +42,9 @@ Then `M-x list-packages` should contain all newly available packages
 from the **oitofelix** archive.
 
 The following table list all packages available from this ELPA and
-indicates whether they are available from other sources.
+indicates whether they are available from other sources.  Although not
+high-priority, I try to get them integrated into the canonical
+upstream distribution chain as far as possible.
 
 
 ### Packages
