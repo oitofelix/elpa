@@ -1,0 +1,3 @@
+baseurl: /elpa
+highlighter: rouge
+exclude: ['platforms', 'plugins']
