@@ -7,7 +7,7 @@
 ;; Package: elpa-deploy
 ;; Homepage: https://github.com/oitofelix/elpa-deploy
 
-;; Version: 20190928.1939
+;; Version: 20190929.250
 ;; Package-Requires: ((emacs "24") (f "0.0"))
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -47,7 +47,9 @@
 
 (cl-defun elpa-deploy
     (path upload-base &aux
-	  (version (format-time-string "%Y%m%d.%H%M"))
+	  (version (format "%d.%d"
+                           (string-to-number (format-time-string "%Y%m%d"))
+                           (string-to-number (format-time-string "%H%M"))))
 	  (package-name (f-base path)))
   "Deploy simple or multi-file package.
 PATH is the filename of a single ‘.el’ file (simple package) or a
@@ -62,14 +64,14 @@ uploads the result.
 
 See ‘package-archive-upload-base’ for the exact meaning of
 UPLOAD-BASE."
-  (interactive "fPackage file or directory: \nDArchive upload base directory: ")
+  (interactive "GPackage file or directory: \nDArchive upload base directory: ")
   (pcase path
     ((pred file-regular-p)
      (elpa-deploy--update-version-string-simple-package path version)
      (mapc #'delete-file
 	   (directory-files
 	    upload-base 'full
-	    (format "^%s-[[:digit:]]\\{8\\}\\.[[:digit:]]\\{4\\}\\.el$"
+	    (format "^%s-[[:digit:]]\\{8\\}\\.[[:digit:]]\\{3,4\\}\\.el$"
                     package-name)))
      (let ((package-archive-upload-base upload-base))
        (package-upload-file path)))
@@ -78,15 +80,20 @@ UPLOAD-BASE."
                                       (format "%s-%s.tar"
                                               package-name version)))))
      (elpa-deploy--update-version-string-multi-file-package path version)
-     (call-process "tar" nil (list (current-buffer) nil) nil "--create"
+     (call-process "tar" nil nil nil "--create"
 		   "--file" file
 		   (format "--transform=s,^%s,%s-%s,"
                            package-name package-name version)
-		   (f-relative path))
+                   "--exclude-vcs"
+                   "--exclude-backups"
+                   "--exclude=*.elc"
+                   (format "--exclude=%s-autoloads.el" package-name)
+                   (format "--directory=%s" (f-dirname file))
+		   (f-relative path (f-dirname file)))
      (mapc #'delete-file
 	   (directory-files
 	    upload-base 'full
-	    (format "^%s-[[:digit:]]\\{8\\}\\.[[:digit:]]\\{4\\}\\.tar$"
+	    (format "^%s-[[:digit:]]\\{8\\}\\.[[:digit:]]\\{3,4\\}\\.tar$"
                     package-name)))
      (let ((package-archive-upload-base upload-base))
        (package-upload-file file))
@@ -122,6 +129,7 @@ Presumably file ‘*-pkg.el’ has the ‘define-package’ form as its first."
       (goto-char (point-min))
       (when (or (package-process-define-package (read (current-buffer)))
 		(error "Can’t find ‘define-package’ in %s" pkg-file))
+        (goto-char (point-min))
 	(down-list)
 	(forward-sexp 2)
 	(kill-sexp)
