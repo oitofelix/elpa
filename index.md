@@ -60,10 +60,10 @@ Name | Description | MELPA | GNU ELPA | GNU Emacs |
 In case you are interested, I maintain this ELPA using
 [elpa-deploy](https://github.com/oitofelix/elpa-deploy).
 
-I have also contributed to other Emacs packages of which I’m not the
-main author, either by creating new modules or improving existing
-ones.  These are available from other sources, but I list them here
-for completeness.
+I have also contributed to other Emacs packages which I’m not the main
+author of, either by creating new modules or improving existing ones.
+These are available from other sources, but I list them here for the
+sake of completeness.
 
 ### Contributions
 
