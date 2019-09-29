@@ -1,9 +1,12 @@
 (1
  (eterm-fn .
-           [(20190928 2200)
+           [(20190929 17)
             ((term
               (0)))
-            "Function keys (F1--F12) for term." tar nil])
+            "Function keys (F1--F12) for term." tar
+            ((:url . "https://github.com/oitofelix/eterm-fn")
+             (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
+             (:authors "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org"))])
  (elpa-deploy .
               [(20190928 1939)
                ((emacs
