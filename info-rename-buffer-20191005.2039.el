@@ -6,7 +6,7 @@
 ;; Keywords: help
 ;; Package: info-rename-buffer
 ;; Homepage: https://github.com/oitofelix/info-rename-buffer
-;; Version: 20190928.1719
+;; Version: 20191005.2039
 ;; Package-Requires: ((emacs "24.3"))
 
 ;; This program is free software: you can redistribute it and/or
@@ -40,7 +40,7 @@
 (require 'info)
 
 
-;;;###autoload;
+;;;###autoload
 (define-minor-mode info-rename-buffer-mode
   "Toggle Info-Rename-Buffer mode on or off.
 With a prefix argument ARG, enable Info-Rename-Buffer mode if ARG
