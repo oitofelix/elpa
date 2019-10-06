@@ -1,6 +1,6 @@
 (1
  (eterm-fn .
-           [(20190929 17)
+           [(20191005 2049)
             ((term
               (0)))
             "Function keys (F1--F12) for term." tar
