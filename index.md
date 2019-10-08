@@ -42,7 +42,7 @@ Then `M-x list-packages` should contain all newly available packages
 from the **oitofelix** archive.
 
 The following table list all packages available from this ELPA and
-indicates whether they are available from other sources.  Although not
+indicates whether they are available elsewhere.  Although not
 high-priority, I try to get them integrated into the canonical
 upstream distribution chain as far as possible.
 
@@ -62,8 +62,8 @@ In case you are interested, I maintain this ELPA using
 
 I have also contributed to other Emacs packages which I’m not the main
 author of, either by creating new modules or improving existing ones.
-These are available from other sources, but I list them here for the
-sake of completeness.
+These are available elsewhere, but I list them here for the sake of
+completeness.
 
 ### Contributions
 
