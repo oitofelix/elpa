@@ -51,10 +51,10 @@ upstream distribution chain as far as possible.
 
 Name | Description | MELPA | GNU ELPA | GNU Emacs |
 -----|-------------|-------|----------|-----------|
-[info-rename-buffer](https://github.com/oitofelix/info-rename-buffer) | Rename Info buffers to match manuals | | |
-[tramp-auto-auth](https://github.com/oitofelix/tramp-auto-auth) | TRAMP automatic authentication library | | |
-[elpa-deploy](https://github.com/oitofelix/elpa-deploy) | ELPA deployment library | | |
-[eterm-fn](https://github.com/oitofelix/eterm-fn) | Function keys (F1--F12) for GNU Emacs terminal | X | |
+[info-rename-buffer](https://github.com/oitofelix/info-rename-buffer) | Rename Info buffers to match manuals | X | | |
+[tramp-auto-auth](https://github.com/oitofelix/tramp-auto-auth) | TRAMP automatic authentication library | | | |
+[elpa-deploy](https://github.com/oitofelix/elpa-deploy) | ELPA deployment library | X | | |
+[eterm-fn](https://github.com/oitofelix/eterm-fn) | Function keys (F1--F12) for GNU Emacs terminal | X | | |
 
 
 In case you are interested, I maintain this ELPA using
