@@ -8,9 +8,9 @@
              (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
              (:authors "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org"))])
  (elpa-deploy .
-              [(20191005 2013)
+              [(20191022 411)
                ((emacs
-                 (24))
+                 (24 4))
                 (f
                  (0 0)))
                "ELPA deployment library" single
