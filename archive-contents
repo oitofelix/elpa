@@ -19,7 +19,7 @@
                 (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
                 (:url . "https://github.com/oitofelix/elpa-deploy"))])
  (tramp-auto-auth .
-                  [(20190928 1932)
+                  [(20191027 1117)
                    ((emacs
                      (24 4))
                     (tramp
