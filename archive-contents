@@ -1,4 +1,13 @@
 (1
+ (cpu-sos .
+          [(20200327 2034)
+           ((emacs
+             (24 1)))
+           "S.O.S. from a CPU in distress" single
+           ((:authors
+             ("Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org"))
+            (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
+            (:url . "https://github.com/oitofelix/cpu-sos"))])
  (eterm-fn .
            [(20191005 2106)
             ((term
