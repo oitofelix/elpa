@@ -55,6 +55,7 @@ Name | Description | MELPA | GNU ELPA | GNU Emacs |
 [tramp-auto-auth](https://github.com/oitofelix/tramp-auto-auth) | TRAMP automatic authentication library | X | | |
 [elpa-deploy](https://github.com/oitofelix/elpa-deploy) | ELPA deployment library | X | | |
 [eterm-fn](https://github.com/oitofelix/eterm-fn) | Function keys (F1--F12) for GNU Emacs terminal | X | | |
+[cpu-sos](https://github.com/oitofelix/cpu-sos) | S.O.S. from a CPU in distress | X | | |
 
 
 In case you are interested, I maintain this ELPA using
