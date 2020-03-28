@@ -39,7 +39,7 @@
                     (:maintainer "Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org")
                     (:url . "https://github.com/oitofelix/tramp-auto-auth"))])
  (info-rename-buffer .
-                     [(20191005 2039)
+                     [(20200328 1147)
                       ((emacs
                         (24 3)))
                       "Rename Info buffers to match manuals" single
