@@ -1,8 +1,8 @@
 (1
  (cpu-sos .
-          [(20200327 2034)
+          [(20200409 2056)
            ((emacs
-             (24 1)))
+             (25 1)))
            "S.O.S. from a CPU in distress" single
            ((:authors
              ("Bruno Félix Rezende Ribeiro" . "oitofelix@gnu.org"))
